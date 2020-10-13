@@ -58,6 +58,8 @@ Citizen.CreateThread(function()
 	while true do
         Citizen.Wait(0)
 
+			
+// nie wiem na chuj ale tak jest jak jest
         if IsPedJumping(player) then
             isJumping = true
         else
@@ -65,9 +67,9 @@ Citizen.CreateThread(function()
         end
 
         if IsPedSprinting(player) then
-			isSprinting = true
-		else
-			isSprinting = false
+		isSprinting = true
+	else
+		isSprinting = false
         end
 
         if IsPedRunning(player) then
@@ -159,7 +161,7 @@ Citizen.CreateThread(function()
             end
 
             if health ~= prevHealth then
-				SetEntityHealth(player, health)
+		SetEntityHealth(player, health)
             end
         end
     end
